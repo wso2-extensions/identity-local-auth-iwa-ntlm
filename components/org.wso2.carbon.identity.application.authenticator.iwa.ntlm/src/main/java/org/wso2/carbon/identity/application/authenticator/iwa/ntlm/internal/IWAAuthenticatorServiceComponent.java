@@ -15,7 +15,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.wso2.carbon.identity.application.authenticator.iwa.internal;
+package org.wso2.carbon.identity.application.authenticator.iwa.ntlm.internal;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -24,9 +24,9 @@ import org.osgi.service.component.ComponentContext;
 import org.osgi.service.http.HttpService;
 import org.osgi.service.http.NamespaceException;
 import org.wso2.carbon.identity.application.authentication.framework.ApplicationAuthenticator;
-import org.wso2.carbon.identity.application.authenticator.iwa.IWAAuthenticator;
-import org.wso2.carbon.identity.application.authenticator.iwa.IWAConstants;
-import org.wso2.carbon.identity.application.authenticator.iwa.servlet.IWAServlet;
+import org.wso2.carbon.identity.application.authenticator.iwa.ntlm.IWAAuthenticator;
+import org.wso2.carbon.identity.application.authenticator.iwa.ntlm.IWAConstants;
+import org.wso2.carbon.identity.application.authenticator.iwa.ntlm.servlet.IWAServlet;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
@@ -51,31 +51,31 @@ public class IWAAuthenticatorServiceComponent {
             httpService.registerServlet(IWAConstants.IWA_URL, iwaServlet, null, null);
             ctxt.getBundleContext().registerService(ApplicationAuthenticator.class.getName(), iwaAuth, null);
             if (log.isDebugEnabled()) {
-                log.debug("IWAAuthenticator bundle is activated");
+                log.debug("IWA NLTM Authenticator bundle is activated");
             }
         } catch (NamespaceException | ServletException e) {
             log.error("Error when registering the IWA servlet, '" + IWAConstants.IWA_URL + "' may be already in use." + e);
         } catch (Throwable e) {
-            log.error("IWAAuthenticator bundle activation failed");
+            log.error("IWA NLTM Authenticator bundle activation failed");
         }
     }
 
     protected void deactivate(ComponentContext ctxt) {
         if (log.isDebugEnabled()) {
-            log.debug("IWAAuthenticator bundle is deactivated");
+            log.debug("IWA NTLM Authenticator bundle is deactivated");
         }
     }
 
     protected void setHttpService(HttpService httpService) {
         if (log.isDebugEnabled()) {
-            log.debug("HTTP Service is set in the IWA SSO bundle");
+            log.debug("HTTP Service is set in the IWA NLTM bundle");
         }
         this.httpService = httpService;
     }
 
     protected void unsetHttpService(HttpService httpService) {
         if (log.isDebugEnabled()) {
-            log.debug("HTTP Service is unset in the IWA SSO bundle");
+            log.debug("HTTP Service is unset in the IWA NLTM bundle");
         }
         this.httpService = null;
     }

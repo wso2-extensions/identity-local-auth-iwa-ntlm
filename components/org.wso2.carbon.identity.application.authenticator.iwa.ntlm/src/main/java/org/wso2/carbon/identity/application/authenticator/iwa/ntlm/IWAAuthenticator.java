@@ -16,7 +16,7 @@
  * under the License.
  */
 
-package org.wso2.carbon.identity.application.authenticator.iwa;
+package org.wso2.carbon.identity.application.authenticator.iwa.ntlm;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
@@ -28,7 +28,7 @@ import org.wso2.carbon.identity.application.authentication.framework.context.Aut
 import org.wso2.carbon.identity.application.authentication.framework.exception.AuthenticationFailedException;
 import org.wso2.carbon.identity.application.authentication.framework.model.AuthenticatedUser;
 import org.wso2.carbon.identity.application.authentication.framework.util.FrameworkUtils;
-import org.wso2.carbon.identity.application.authenticator.iwa.servlet.IWAServlet;
+import org.wso2.carbon.identity.application.authenticator.iwa.ntlm.servlet.IWAServlet;
 import org.wso2.carbon.identity.core.util.IdentityUtil;
 import org.wso2.carbon.user.core.UserStoreManager;
 import org.wso2.carbon.utils.multitenancy.MultitenantUtils;
@@ -46,10 +46,10 @@ import javax.servlet.http.HttpSession;
 public class IWAAuthenticator extends AbstractApplicationAuthenticator implements
         LocalApplicationAuthenticator {
 
-    public static final String AUTHENTICATOR_NAME = "IWAAuthenticator";
-    public static final String AUTHENTICATOR_FRIENDLY_NAME = "iwa";
+    public static final String AUTHENTICATOR_NAME = "IwaNTLMAuthenticator";
+    public static final String AUTHENTICATOR_FRIENDLY_NAME = "iwa-ntlm";
     //the following param of the request will be set once the request is processed by the IWAServlet
-    public static final String IWA_PROCESSED = "iwaauth";
+    public static final String IWA_PROCESSED = "iwa-ntlm-auth";
     private static final long serialVersionUID = -713445365200141399L;
     private static Log log = LogFactory.getLog(IWAAuthenticator.class);
 
