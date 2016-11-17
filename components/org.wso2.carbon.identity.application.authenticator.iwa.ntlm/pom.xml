@@ -17,10 +17,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <parent>
-        <groupId>org.wso2.carbon.identity</groupId>
-        <artifactId>identity-application-auth-iwa</artifactId>
+        <groupId>org.wso2.carbon.identity.application.auth.iwa.ntlm</groupId>
+        <artifactId>identity-application-auth-iwa-ntlm</artifactId>
         <relativePath>../../pom.xml</relativePath>
-        <version>5.1.2</version>
+        <version>5.2.0-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -29,11 +29,11 @@
     <name>WSO2 Carbon - IWA Identity Application Authenticator</name>
     <dependencies>
         <dependency>
-            <groupId>org.wso2.carbon.identity</groupId>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.application.authentication.framework</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon.identity</groupId>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.application.common</artifactId>
         </dependency>
         <dependency>

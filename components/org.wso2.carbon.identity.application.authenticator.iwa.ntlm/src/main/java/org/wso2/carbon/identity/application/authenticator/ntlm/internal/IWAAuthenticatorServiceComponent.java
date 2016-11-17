@@ -15,7 +15,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.wso2.carbon.identity.application.authenticator.iwa.internal;
+package org.wso2.carbon.identity.application.authenticator.ntlm.internal;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -24,9 +24,9 @@ import org.osgi.service.component.ComponentContext;
 import org.osgi.service.http.HttpService;
 import org.osgi.service.http.NamespaceException;
 import org.wso2.carbon.identity.application.authentication.framework.ApplicationAuthenticator;
-import org.wso2.carbon.identity.application.authenticator.iwa.IWAAuthenticator;
-import org.wso2.carbon.identity.application.authenticator.iwa.IWAConstants;
-import org.wso2.carbon.identity.application.authenticator.iwa.servlet.IWAServlet;
+import org.wso2.carbon.identity.application.authenticator.ntlm.IWAAuthenticator;
+import org.wso2.carbon.identity.application.authenticator.ntlm.IWAConstants;
+import org.wso2.carbon.identity.application.authenticator.ntlm.servlet.IWAServlet;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;

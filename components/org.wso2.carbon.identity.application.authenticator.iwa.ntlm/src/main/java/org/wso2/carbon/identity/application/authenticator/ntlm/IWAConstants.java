@@ -16,7 +16,7 @@
  * under the License.
  */
 
-package org.wso2.carbon.identity.application.authenticator.iwa;
+package org.wso2.carbon.identity.application.authenticator.ntlm;
 
 public class IWAConstants {
 

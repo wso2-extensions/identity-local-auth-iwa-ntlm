@@ -16,13 +16,13 @@
  * under the License.
  */
 
-package org.wso2.carbon.identity.application.authenticator.iwa.servlet;
+package org.wso2.carbon.identity.application.authenticator.ntlm.servlet;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.wso2.carbon.identity.application.authenticator.iwa.IWAAuthenticator;
-import org.wso2.carbon.identity.application.authenticator.iwa.IWAConstants;
-import org.wso2.carbon.identity.application.authenticator.iwa.IWAServiceDataHolder;
+import org.wso2.carbon.identity.application.authenticator.ntlm.IWAAuthenticator;
+import org.wso2.carbon.identity.application.authenticator.ntlm.IWAConstants;
+import org.wso2.carbon.identity.application.authenticator.ntlm.IWAServiceDataHolder;
 import org.wso2.carbon.identity.core.util.IdentityUtil;
 import waffle.servlet.AutoDisposableWindowsPrincipal;
 import waffle.servlet.NegotiateSecurityFilter;
