@@ -1,1 +1,1 @@
-# identity-local-auth-iwa
+# identity-local-auth-iwa-ntlm

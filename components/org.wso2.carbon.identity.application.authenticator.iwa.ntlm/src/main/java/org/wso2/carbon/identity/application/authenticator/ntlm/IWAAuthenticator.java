@@ -46,8 +46,8 @@ import javax.servlet.http.HttpSession;
 public class IWAAuthenticator extends AbstractApplicationAuthenticator implements
         LocalApplicationAuthenticator {
 
-    public static final String AUTHENTICATOR_NAME = "IWAAuthenticator";
-    public static final String AUTHENTICATOR_FRIENDLY_NAME = "iwa";
+    public static final String AUTHENTICATOR_NAME = "IWANTLMAuthenticator";
+    public static final String AUTHENTICATOR_FRIENDLY_NAME = "iwa-ntlm";
     //the following param of the request will be set once the request is processed by the IWAServlet
     public static final String IWA_PROCESSED = "iwaauth";
     private static final long serialVersionUID = -713445365200141399L;
