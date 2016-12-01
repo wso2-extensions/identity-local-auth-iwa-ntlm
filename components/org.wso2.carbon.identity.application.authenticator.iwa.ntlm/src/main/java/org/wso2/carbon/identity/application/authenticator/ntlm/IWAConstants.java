@@ -23,9 +23,9 @@ public class IWAConstants {
     public static final String OS_NAME_PROPERTY = "os.name";
     public static final String WINDOWS_OS_MATCH_STRING = "win";
     public static final String COMMON_AUTH_EP = "commonauth";
-    public static final String IWA_AUTH_EP = "iwa-kerb";
+    public static final String IWA_AUTH_EP = "iwa-ntlm";
     public static final String UTF_8 = "UTF-8";
-    public static final String IWA_URL = "/iwa-kerb";
+    public static final String IWA_URL = "/iwa-ntlm";
     public static final String IWA_PARAM_STATE = "state";
     public static final String SUBJECT_ATTRIBUTE = "javax.security.auth.subject";
     public static final String HTTP_CONNECTION_HEADER = "Connection";
