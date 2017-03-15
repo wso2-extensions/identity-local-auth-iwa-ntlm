@@ -158,7 +158,7 @@
             <!-- Identity Local Auth IWA dependencies -->
             <dependency>
                 <groupId>org.wso2.carbon.identity.application.auth.iwa.ntlm</groupId>
-                <artifactId>org.wso2.carbon.identity.application.authenticator.iwa</artifactId>
+                <artifactId>org.wso2.carbon.identity.application.authenticator.iwa.ntlm</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
