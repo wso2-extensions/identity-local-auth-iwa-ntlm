@@ -51,7 +51,7 @@ public class IWAAuthenticator extends AbstractApplicationAuthenticator implement
     //the following param of the request will be set once the request is processed by the IWAServlet
     public static final String IWA_PROCESSED = "iwa-ntlm-auth";
     private static final long serialVersionUID = -713445365200141399L;
-    private static Log log = LogFactory.getLog(IWAAuthenticator.class);
+    private static final Log log = LogFactory.getLog(IWAAuthenticator.class);
 
     @Override
     public boolean canHandle(HttpServletRequest request) {
