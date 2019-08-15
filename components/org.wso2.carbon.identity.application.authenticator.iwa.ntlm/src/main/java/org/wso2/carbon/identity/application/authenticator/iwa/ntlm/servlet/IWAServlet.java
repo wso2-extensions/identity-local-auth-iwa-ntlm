@@ -57,7 +57,7 @@ public class IWAServlet extends HttpServlet {
 
     public static final String PRINCIPAL_SESSION_KEY = NegotiateSecurityFilter.class
             .getName() + ".PRINCIPAL";
-    private static Log log = LogFactory.getLog(IWAServlet.class);
+    private static final Log log = LogFactory.getLog(IWAServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
