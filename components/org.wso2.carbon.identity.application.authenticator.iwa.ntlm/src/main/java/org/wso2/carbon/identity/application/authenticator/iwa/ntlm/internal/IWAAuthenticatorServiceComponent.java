@@ -21,6 +21,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.eclipse.equinox.http.helper.ContextPathServletAdaptor;
 import org.osgi.service.component.ComponentContext;
+import org.osgi.service.component.annotations.Component;
 import org.osgi.service.http.HttpService;
 import org.osgi.service.http.NamespaceException;
 import org.wso2.carbon.identity.application.authentication.framework.ApplicationAuthenticator;
@@ -31,13 +32,9 @@ import org.wso2.carbon.identity.application.authenticator.iwa.ntlm.servlet.IWASe
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 
-
-/**
- * @scr.component name="identity.application.authenticator.basicauth.component" immediate="true"
- * @scr.reference name="osgi.httpservice" interface="org.osgi.service.http.HttpService"
- * cardinality="1..1" policy="dynamic" bind="setHttpService"
- * unbind="unsetHttpService"
- */
+@Component(
+        name = "identity.application.authenticator.iwa.ntlm.component",
+        immediate = true)
 public class IWAAuthenticatorServiceComponent {
 
     private static final Log log = LogFactory.getLog(IWAAuthenticatorServiceComponent.class);
